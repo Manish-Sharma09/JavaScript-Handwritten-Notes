@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+  function myfun(){
+  var userConfirmation = confirm("will you want visit the site"); 
+  if(userConfirmation == true){
+    window.open("https://www.google.com/");
+    return true;
+  }else{
+    document.write("user doesn't want to visit the site");
+  }
+    return false;
+  }
+</script>
+
+<body>
+<input type="button" value="Check Now" onclick="myfun()">
+</body>
+
+</html>

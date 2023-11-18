@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+  document.write('without for in loop:-' + "<br>")
+  document.write("<br>")
+  document.write("<br>")
+  var obj = {
+    fname: 'manish',
+    lname: 'sharma',
+    age: 25,
+    mail: 'manish.sharma@adgonline.in'
+  }
+  // without for in loop
+  document.write(obj.fname + "<br>");
+  document.write(obj.lname + "<br>");
+  document.write(obj.age + "<br>");
+  document.write(obj.mail + "<br>");
+
+  document.write("<br>")
+  document.write("<br>")
+  document.write('for in loop:-' + "<br>")
+  document.write("<br>")
+  document.write("<br>")
+
+
+  //witn using for in loop
+  for (var key in obj) {
+    document.write(key + " : " + obj[key] + "<br>");
+  }
+
+</script>
+
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <title>Events</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+    }
+
+    .glow-on-hover {
+      gap: 10px;
+      width: 220px;
+      margin-right: 10px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+      color: #000
+    }
+
+    .glow-on-hover:active:after {
+      background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+      opacity: 1;
+    }
+
+    .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+    }
+  </style>
+  <script>
+    //1.Click Events - 
+
+    function singleclick() {
+      document.write("Hello Everyone");
+    }
+
+
+    //2.Alert Events -
+
+    function alertbtn() {
+      alert("Hello Everyone");
+    }
+
+    //3. Ondblclick Event -
+
+    function andddDV() {
+      document.write("Hello Everyone");
+    }
+
+    //4. oncontextmenu Event -
+
+    function rightmenu() {
+      alert("hello")
+    }
+
+    // 5. onmouseenter Event - 
+
+    function mouseenter() {
+      alert("hello")
+    }
+
+    //6.onmouseout Event -
+
+    function mouseout() {
+      alert("hello")
+    }
+
+    //7. onmousedown Event -
+
+    function mousedown() {
+      alert("Hello World")
+    }
+    //8. onmouseup Event -
+
+    function mouseup() {
+      alert("Hello World")
+    }
+
+    //9. onkeypress Event -
+
+    function onkeypress() {
+      alert("Hello World")
+    }
+
+    //10. onresize Event -
+
+    function onresize() {
+      alert("Hello World")
+    }
+
+    //11. onscroll Event -
+
+    function onscroll() {
+      alert("Hello World")
+    }
+  </script>
+</head>
+
+<body onkeypresss="onkeypress()">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 space-y-5">
+    <button class="glow-on-hover my-0 md:my-5" type="button" onclick="singleclick()">On click</button>
+    <button class="glow-on-hover" type="button" onclick="alertbtn()">Alert</button>
+    <button class="glow-on-hover" type="button" ondblclick="andddDV()">Double click</button>
+    <button class="glow-on-hover" type="button" oncontextmenu="rightmenu()">Right Click</button>
+    <button class="glow-on-hover" type="button" onmouseenter="mouseenter()">Mouse Enter</button>
+    <button class="glow-on-hover" type="button" onmouseout="mouseout()">Mouse Out</button>
+    <button class="glow-on-hover" type="button" onmousedown="mousedown()">Mouse Down</button>
+    <button class="glow-on-hover" type="button" onmouseup="mouseup()">Mouse Up</button>
+    <button class="glow-on-hover" type="button">Keypress</button>
+    <!--This function is work only body tag-->
+    <button class="glow-on-hover" type="button" onresize="onresize()">Resize</button>
+    <button class="glow-on-hover" type="button" onscroll="onscroll()">On scroll</button>
+    <!--This function is work only scroll -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#msg{
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.div{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+table{
+  border:1px solid black;
+}
+table thead{
+  display:flex;
+}
+table thead tr td{
+  padding:5px;
+  border:1px solid black;
+}

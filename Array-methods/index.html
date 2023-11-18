@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+  //Sort (a to z)
+  var a = ["parkash", "manish", "om", "nisha",];
+  document.write("1...." + a + "<br>");
+  a.sort();
+  document.write("1...." + a + "<br><br>");
+
+
+  //Reverse(right to left )
+  var x = ["abhi", "biru", "jatin", "jai"];
+  document.write("2...." + x + "<br>");
+  x.reverse();
+  document.write("2  ...." + x + "<br><br>");
+
+
+
+  //Pop() Delete the last value
+  var b = ["one", "two", "three", "four"];
+  document.write("3...." + b + "<br>")
+  b.pop();
+  document.write("3...." + b + "<br><br>")
+
+
+  //push("name here") Adding the last value
+  var c = ["apple", "bag", "cat", "dog"];
+  document.write("4...." + c + "<br>")
+  c.push("elephant");
+  document.write("4...." + c + "<br><br>")
+
+
+  //shift() Delete the first value
+  var d = ["one", "two", "three", "four"];
+  document.write("5...." + d + "<br>");
+  d.shift();
+  document.write("5...." + d + "<br><br>");
+
+
+  //unshift("name here")  Adding the first value
+  var e = ["one1", "two2", "three3", "four4"];
+  document.write("6...." + e + "<br>");
+  e.unshift("zero");
+  document.write("6...." + e + "<br><br>");
+
+
+  //concat & join
+  var f = ["red", "green", "blue", "black"];
+  var g = ["rose gold"];
+  var h = f.concat(g);
+  document.write("7...." + h + "<br>");
+  var i = h.join(" / ");
+  document.write("7...." + i + "<br><br>");
+
+
+  //slice() print the value to given perameter
+  var q = ["akash", "amit", "chintu", "gourav"];
+  document.write("8...." + q + "<br>");
+  var w = q.slice(0, 3);
+  document.write("8...." + w + "<br><br>");
+
+
+
+  //splice() to use add the value and using perameter
+  var r = ["akash", "amit", "chintu", "gourav"];
+  document.write("9...." + r + "<br>");
+  r.splice(2, 0, "golu", "dholu");
+  document.write("9...." + r + "<br><br>");
+
+
+
+  //isArray)() check array or not
+  var j = ["ek", "do", "teen", "chaar"];
+  // var j = 20;
+  // var j = "manish";
+  if (Array.isArray(j)) {
+    document.write("10...." + "condition is True" + "<br><br>");
+  } else {
+    document.write("10...." + "condition is False" + "<br><br>");
+  }
+
+
+  //indexOf() to find the start index of array (left to right)
+  var m = ["A", "A", "B", "C", "B", "D"];
+  var o = m.indexOf("B")
+  document.write("11...." + o + "<br><br>");
+
+
+  //lastindexOf() to find the Last index of array (right to left)
+  var ma = ["A", "A", "B", "C", "B", "D"];
+  var on = ma.lastIndexOf("B")
+  document.write("12...." + on + "<br><br>");
+
+
+  //inculudes() is use to search word
+  var num1 = "Hello world, welcome to the universe.";
+  // var num2 = num1.includes("world");
+  if (num1.includes("de")) {
+    document.write("13...." + "true")
+  } else {
+    document.write("13...." + "false" + "<br><br>")
+  }
+
+
+  //some() is use as a loop
+  var vari1 = ["10", "20", "30", "40"];
+  document.write("14...." + vari1 + "<br><br>");
+
+
+  var Adultage = vari1.some(check);
+  document.write("14...." + Adultage + "<br><br>");
+
+  function check(nums) {
+    return nums >= 40;
+  }
+
+  //every() is use as a loop
+  var vari1 = ["10", "20", "30", "40"];
+  document.write("15...." + vari1 + "<br><br>");
+
+
+  var Adultage = vari1.every(check);
+  document.write("15...." + Adultage + "<br><br>");
+
+  function check(nums) {
+    return nums >= 40;
+  }
+
+  //find() to use to find the value
+  var hhh = ["10", "20", "30", "40"]
+
+  var nnn = hhh.find(checks);
+  document.write("16...." + nnn + "<br><br>")
+
+  function checks(hhh) {
+    return hhh >= 18;
+  }
+
+
+  //findIndex() to use to find the value
+  var hhh = ["10", "20", "30", "40"]
+
+  var nnn = hhh.findIndex(checks);
+  document.write("17...." + nnn + " is index number" + "<br><br>")
+
+  function checks(hhh) {
+    return hhh >= 28;
+  }
+
+
+  //filter() use to print a new array
+  var hhh = ["10", "20", "30", "40"]
+
+  var nnn = hhh.filter(checks);
+  document.write("18...." + nnn + " is new array" + "<br><br>")
+
+  function checks(hhh) {
+    return hhh >= 28;
+  }
+
+  // toSrting() Array t string converter
+  var va = ["My", "name", "is", "manish"]
+
+  va.toString();
+  document.write("19.... " + va + " convert in to a string" + "<br><br>")
+
+
+
+  //valueof() is smiiler to document.write
+  var va = ["My", "name", "is", "manish"]
+  document.write("20....." + va.valueOf() + "<br><br>");
+
+
+
+  // fill() is use to replace a array with one word
+  var va = ["My", "name", "is", "manish"]
+  va.fill("ram");
+  document.write("21...." + va);
+
+
+  // Foreach() is use to replace a array with one word
+  var va = ["My", "name", "is", "manish"]
+  va.fill("ram");
+  document.write("21...." + va);
+</script>
+
+<body>
+</body>
+
+</html>

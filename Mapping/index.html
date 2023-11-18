@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <script>
+    var arr1 = [10,20,30,40,50];
+    document.write(arr1 + "<br><br>");
+
+    var x = arr1.map(function test(x){
+      return x*10;
+    });
+
+    document.write(x + "<br><br>");
+
+    // example 2
+       var ary = [
+      {fname : "Yahoo" , lname : "Baba"},
+      {fname : "Rahul" , lname : "Kumar"},
+      {fname : "Karan" , lname : "Sharma"},
+    ];
+
+    var b = ary.map(test);
+    document.write(b);
+
+    function test(x){
+      return x.fname + " " + x.lname;
+    }
+  </script>
+<body>
+</body>
+
+</html>

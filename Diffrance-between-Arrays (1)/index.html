@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script>
+
+  // var
+  var number = 50
+
+  function print() {
+    var square = number * number
+    document.write(square)
+  }
+
+  document.write(number) // 50
+
+  print() // 2500
+
+
+
+  // let
+  let number = 50
+
+  function print() {
+    let square = number * number
+
+    if (number < 60) {
+      var largerNumber = 80
+      let anotherLargerNumber = 100
+
+      document.write(square)
+    }
+
+    document.write(largerNumber)
+    document.write(anotherLargerNumber)
+  }
+
+  print()
+  // 2500
+  // 80
+  // ReferenceError: anotherLargerNumber is not defined
+
+
+  // const
+  const number = 50
+
+  function print() {
+    const square = number * number
+
+    if (number < 60) {
+      var largerNumber = 80
+      const anotherLargerNumber = 100
+
+      document.write(square)
+    }
+
+    document.write(largerNumber)
+    document.write(anotherLargerNumber)
+  }
+
+  print()
+// 2500
+// 80
+// ReferenceError: anotherLargerNumber is not defined
+</script>
+
+<body>
+<!--   Hello world -->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script>
+  var ary = [
+    ["Manish", 15, "bhanu", "sumit"],
+    ["jeck", 15, "hanry", "kaju"],
+    ["frank", 12, "rock", "drake"],
+    ["brown", 90, "bahu", "starks"],
+  ];
+  // document.write(ary[0][3]);
+// document.write(ary.length);
+  document.write("<table border='1px' cellspacing='0'>");
+  for (var a = 0; a < ary.length; a++) {
+    document.write("<tr>");
+
+    for (var b = 0; b < ary[a].length; b++) {
+      document.write("<td>" + ary[a][b] + "</td>");
+    }
+    document.write("<br>")
+  };
+  document.write("</tr>");
+
+  for (var a = 0; a < 4; a++) {
+  }
+  document.write("</table>");
+</script>
+
+<body>
+
+</body>
+
+</html>

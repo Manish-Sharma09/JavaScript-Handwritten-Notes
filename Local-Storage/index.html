@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script>
+    Console was cleared
+    undefined
+    let name = "MAanish";
+    undefined
+    console.log(name);
+    VM2368: 1 MAanish
+    undefined
+    localStorage.setItem("name", name);
+    undefined
+    console.log(localStorage.get("name", name);)
+    VM2601: 1 Uncaught SyntaxError: missing ) after argument list
+    console.log(localStorage.getItem("name", name);)
+    VM2627: 1 Uncaught SyntaxError: missing ) after argument list
+    console.log(localStorage.getItem("name", name));
+    VM2641: 1 MAanish
+    undefined
+    let arr = ["pandat", "manish", "sharma"];
+    undefined
+    localStorage.setItem(arr);
+    VM2849: 1 Uncaught TypeError: Failed to execute 'setItem' on 'Storage': 2 arguments required, but only 1 present.
+      at < anonymous >: 1: 14
+        (anonymous) @VM2849: 1
+    localStorage.setItem("name");
+
+    VM2876: 1 Uncaught TypeError: Failed to execute 'setItem' on 'Storage': 2 arguments required, but only 1 present.
+      at < anonymous >: 1: 14
+        (anonymous) @VM2876: 1
+    localStorage.setItem('name', JSON.stringify(arr));
+
+    undefined
+    localStorage.setItem('name', arr);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
